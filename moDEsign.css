@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero section */
+.hero{
+    background-image: url('blue cascade.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+    .hero::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .hero >*{
+        position: relative;
+        z-index: 2;
+    }
+    .hero h1{
+        display: block;
+        width: fit-content;
+        font-size: 4rem;
+        position: relative;
+        color: white;
+    }
+    .hero .cta{
+        display: inline-block;
+        padding: 10px 30px;
+        color: cornflowerblue;
+        background-color: transparent;
+        border: 2px solid cornflowerblue;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s ease ;
+        transition-property: background-color, color;
+    }
+    .hero .cta:hover{
+        background-color: cornflowerblue;
+        color: white;
+    }
+    .hero .hero{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 54pt;
+    justify-content: flex-start;
+    }
+
+    .Attributescontainer{
+        width: 100%;
+        height: 25%;
+        background-image: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.8)), url(blueneb.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 22px;
+        color: whitesmoke;
+        border: 10px solid darkblue;
+    }
+
+    .attributes-top{
+        padding: 22px;
+    }
+
+    .bottom{
+        width: 100%;
+        height: 570px;
+        background-image: linear-gradient(rgba(0,0,0,0.8)), url(blueneb.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .up{
+        width: 100%;
+        height: 225px;
+        display: flex;
+    }
+
+    .down{
+        width: 100%;
+        height: 225px;
+        display: flex;
+    }
+
+    .l{
+        width: 50%;
+        height: 225px;
+        color: whitesmoke;
+        padding: 40px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .l p:hover{
+        background-color: darkblue;
+        border: 3px solid darkblue;
+        box-shadow: 1px 1px 20px aqua;
+    }
+
+    .l p{
+        background-color: rgb(5, 5, 72);
+        border-radius: 20px;
+        padding: 14px;
+    }
+
+    .upper{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .it{
+        font-weight: 900;
+        color: whitesmoke;
+        font-size: 74px;
+    }
+
+    .footer{
+        font-size: 11px;
+        color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10px;
+        margin-top: 20px;
+    }
+
+    .menu{
+        width: 100%;
+        height: 50px;
+        background-color: darkblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 0 15px;
+    }
+
+    .brand{
+        font-weight: 900;
+        font-size: 34px;
+        color: whitesmoke;
+        letter-spacing: 4px;
+    }
+
+    .brand2{
+        font-weight: 900;
+        font-size: 34px;
+        color: aqua;
+        letter-spacing: 4px;
+    }
+
+    .list{
+        width: 36%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .aa{
+        color: whitesmoke;
+        font-weight: 800;
+        font-size: 24px;
+    }
+/*  End hero section */
